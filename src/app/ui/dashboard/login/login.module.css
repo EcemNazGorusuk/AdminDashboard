@@ -1,0 +1,59 @@
+@keyframes sparkle {
+  0% {
+    filter: brightness(1) hue-rotate(0deg);
+  }
+  50% {
+    filter: brightness(1.5) hue-rotate(10deg);
+  }
+  100% {
+    filter: brightness(1) hue-rotate(0deg);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  background: linear-gradient(85deg, #01081d, #103e87); /* Gradient renkleri */
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  animation: sparkle 3s infinite;
+}
+
+.form input {
+  width: 100%;
+  padding: 30px;
+  border: 2px solid #2e374a;
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.form button {
+  width: 100%;
+  padding: 20px;
+  background-color: #688fbf;
+  color: #0a1e37;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form h1{
+    font-size: 30px;
+    font-style: italic;
+}
