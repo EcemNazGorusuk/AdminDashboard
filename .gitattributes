@@ -1,2 +1,1 @@
- *.* linguist-language=Javascript
-  *.* linguist-language=Next JS
+ *.* linguist-language=Javascript,Next JS
